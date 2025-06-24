@@ -1,0 +1,19 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HahahaIshouldnamethisproperlybutwon-t", "HahahaIshouldnamethisproperlybutwon-t.csproj", "{B3B7F0E8-74B1-4C5E-B3D4-1FFFFB71D8B9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+	Debug|Any CPU = Debug|Any CPU
+	ExportDebug|Any CPU = ExportDebug|Any CPU
+	ExportRelease|Any CPU = ExportRelease|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B3B7F0E8-74B1-4C5E-B3D4-1FFFFB71D8B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3B7F0E8-74B1-4C5E-B3D4-1FFFFB71D8B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3B7F0E8-74B1-4C5E-B3D4-1FFFFB71D8B9}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
+		{B3B7F0E8-74B1-4C5E-B3D4-1FFFFB71D8B9}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
+		{B3B7F0E8-74B1-4C5E-B3D4-1FFFFB71D8B9}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
+		{B3B7F0E8-74B1-4C5E-B3D4-1FFFFB71D8B9}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+	EndGlobalSection
+EndGlobal
