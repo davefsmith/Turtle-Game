@@ -3,6 +3,9 @@ using System;
 
 public partial class Jeffery : Area2D
 {
+	[Signal]
+	public delegate void HitEventHandler();
+	
 	[Export]
 	public int Acc {get; set;} = 100;
 	[Export]
@@ -53,5 +56,19 @@ public partial class Jeffery : Area2D
 		Velocity += (movementAcc + drag) * (float)delta;
 		Position += Velocity * (float)delta;
 		Position = new Vector2(	x: Mathf.Clamp(Position.X, 0, ScreenSize.X), y: Mathf.Clamp(Position.Y, 0, ScreenSize.Y));
+	}
+	private void OnBodyEntered(Node2D body)
+	{
+		Hide(); // Player disappears after being hit.
+		EmitSignal(SignalName.Hit);
+		// Must be deferred as we can't change physics properties on a physics callback.
+		GetNode<CollisionShape2D>("CollisionShape2D").SetDeferred(CollisionShape2D.PropertyName.Disabled, true);
+	}
+	
+	public void Start(Vector2 position)
+	{
+		Position = position;
+		Show();
+		GetNode<CollisionShape2D>("CollisionShape2D").Disabled = false;
 	}
 }
